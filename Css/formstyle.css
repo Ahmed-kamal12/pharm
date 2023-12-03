@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-ch: #3081D0;
+    --color-let: #607d8b;
+    --delay-time: 0.3s;
+}
+
+form {
+    font-family: 'Cairo';
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+form>div {
+    margin-bottom: 10px;
+}
+
+form>h2 {
+    text-align: inherit;
+}
+
+div>input {
+    padding: 10px;
+    border: none;
+    border-bottom: solid #eee;
+    transition-delay: var(--delay-time);
+    width: 250px
+}
+
+span {
+    margin: 0 10px;
+    transition-delay: var(--delay-time);
+    color: var(--color-let);
+}
+
+span>input {
+    cursor: pointer;
+}
+
+p>a:hover,
+span:hover {
+    color: var(--color-ch);
+    font-weight: bold;
+}
+
+#submit {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-weight: 600;
+    color: white;
+    background-color: var(--color-ch);
+    cursor: pointer;
+    transition-delay: var(--delay-time);
+}
+
+input:hover {
+    border-color: var(--color-ch);
+}
+
+#submit:hover {
+    box-shadow: 0 0 3px 1px #565564;
+}
+
+p {
+    color: var(--color-let);
+    font-size: 12px;
+}
+
+p>a {
+    text-decoration: none;
+    transition-delay: var(--delay-time);
+}
