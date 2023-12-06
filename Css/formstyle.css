@@ -6,6 +6,10 @@
     --delay-time: 0.3s;
 }
 
+p {
+    margin: 0;
+}
+
 form {
     font-family: 'Cairo';
     width: fit-content;
@@ -21,6 +25,7 @@ form>h2 {
     text-align: inherit;
 }
 
+/*input style*/
 div>input {
     padding: 10px;
     border: none;
@@ -68,9 +73,35 @@ input:hover {
 p {
     color: var(--color-let);
     font-size: 12px;
+    margin-top: 10px;
 }
 
 p>a {
     text-decoration: none;
     transition-delay: var(--delay-time);
+}
+
+/*horizontal line for 'or'*/
+#or {
+    position: relative;
+    margin: 0;
+    height: 10px;
+}
+
+#or::after,
+#or::before {
+    position: absolute;
+    content: '';
+    bottom: -2.5px;
+    width: 90px;
+    height: 1px;
+    background-color: var(--color-let);
+}
+
+#or::after {
+    right: 32px
+}
+
+#or::before {
+    left: 32px;
 }
