@@ -64,10 +64,11 @@ nav {
     margin-top: 0;
     top: 75px;
     border-bottom: #eee solid 1px;
+    background-color: #bab9c0;
 }
 ul li{ 
     display: inline-block;
-    width: calc(95% / 7);
+    width: calc(95% / 8);
     margin: 0 auto;
     padding: 5px 25px;
 }
@@ -76,7 +77,11 @@ nav ul{
     list-style: none;
     align-items: center;
 }
-
+nav ul :hover{
+    background-color: #6c9bca;
+    color: #eee;
+    border-radius: 20px;
+}
 
 /*main page */
 
@@ -101,7 +106,7 @@ main h1{
 main p {
     margin-top: 10px;
 }
-
+ 
 /* Sections */
 
 /* ------Drugs------*/
