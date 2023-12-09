@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     font-family: 'Cairo';
     box-sizing: border-box;
 }
@@ -17,9 +18,11 @@ div {
     display: inline-block;
 }
 
-header, nav {
+header,
+nav {
     background-color: white;
 }
+
 /* header Style */
 header {
     height: 75px;
@@ -60,28 +63,33 @@ header a {
 nav {
     position: fixed;
     width: 100%;
-    z-index: 99999;
+    z-index: 9999;
     margin-top: 0;
     top: 75px;
     border-bottom: #eee solid 1px;
-    background-color: #bab9c0;
 }
-ul li{ 
+
+ul li {
     display: inline-block;
     width: calc(95% / 8);
     margin: 0 auto;
     padding: 5px 25px;
 }
-nav ul{
+
+nav ul {
     margin: 5px;
     list-style: none;
     align-items: center;
+    transition-duration: 1.5s;
+    transition-delay: 1s;
 }
-nav ul :hover{
-    background-color: #6c9bca;
-    color: #eee;
+
+/* nav ul :hover{
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 20px;
-}
+} */
+
 
 /*main page */
 
@@ -99,14 +107,14 @@ main>div {
     height: 100vh;
 }
 
-main h1{
+main h1 {
     margin-bottom: 10px;
 }
 
 main p {
     margin-top: 10px;
 }
- 
+
 /* Sections */
 
 /* ------Drugs------*/
@@ -115,37 +123,49 @@ div>h2 {
     text-align: center;
 }
 
-#Drugs{
+#Drugs {
     margin-top: 120px;
 }
 
-.Drugs{
+.Drugs {
     padding: 0;
 }
 
 div>div {
     display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0 53px;
+    padding: 5px 65px;
 }
-/* F5F7F8 */
+
+/* F5F7F8  #F9F9F9*/
 div>figure {
+    height: 450px;
+    width: 310px;
     background-color: #F9F9F9;
-    border-radius: 25px;
-    padding: 50px;
-    margin: 10px 55px;
+    margin: 10px 48px;
     position: relative;
 }
 
-button {
+figure>img {
+    object-fit: contain;
+    width: 280px;
+    height: 230px;
+    margin: 15px;
+}
+
+figure>div {
+    text-align: center;
     position: absolute;
-    bottom: 20px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+button {
     color: white;
     font-weight: bold;
-    left: 32px;
     width: 80%;
     padding: 10px 0;
+    margin: 0 30px;
     background-color: #3081D0;
     border: none;
     border-radius: 25px;
