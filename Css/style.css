@@ -177,3 +177,11 @@ button {
 button:hover {
     box-shadow: 0 0 3px 1px #565564;
 }
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
