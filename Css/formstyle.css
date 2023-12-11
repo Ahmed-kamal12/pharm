@@ -3,7 +3,6 @@
 :root {
     --color-ch: #3081D0;
     --color-let: #607d8b;
-    --delay-time: 0.3s;
 }
 
 p {
@@ -30,13 +29,15 @@ div>input {
     padding: 10px;
     border: none;
     border-bottom: solid #eee;
-    transition-delay: var(--delay-time);
+    transition-duration: 1s;
+    transition-delay: 0.5;
     width: 250px
 }
 
 span {
     margin: 0 10px;
-    transition-delay: var(--delay-time);
+    transition-duration: 0.5;
+    transition-delay: 0.3;
     color: var(--color-let);
 }
 
@@ -59,7 +60,8 @@ span:hover {
     color: white;
     background-color: var(--color-ch);
     cursor: pointer;
-    transition-delay: var(--delay-time);
+    transition-duration: 0.5;
+    transition-delay: 0.3;
 }
 
 input:hover {
@@ -78,7 +80,8 @@ p {
 
 p>a {
     text-decoration: none;
-    transition-delay: var(--delay-time);
+    transition-duration: 0.5;
+    transition-delay: 0.3;
 }
 
 /*horizontal line for 'or'*/

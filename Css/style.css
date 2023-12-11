@@ -57,6 +57,12 @@ header input {
 header a {
     margin-right: 10px;
     font-size: 18px;
+    transition-duration: 0.5;
+    transition-delay: 0.3;
+}
+
+header a:hover {
+    text-shadow: 0 0 5px #B2C8BA;
 }
 
 /*nav bar*/
@@ -68,27 +74,20 @@ nav {
     top: 75px;
     border-bottom: #eee solid 1px;
 }
-
 ul li {
     display: inline-block;
     width: calc(95% / 8);
     margin: 0 auto;
     padding: 5px 25px;
 }
-
+li:hover {
+    text-shadow: 0 0 5px #B2C8BA;
+}
 nav ul {
     margin: 5px;
     list-style: none;
     align-items: center;
-    transition-duration: 1.5s;
-    transition-delay: 1s;
 }
-
-/* nav ul :hover{
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 20px;
-} */
 
 
 /*main page */
@@ -115,16 +114,35 @@ main p {
     margin-top: 10px;
 }
 
+ /*---------- Brief ------------*/
+.Brief {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.Brief>p {
+    font-size: 20px;
+    padding-top: 10px;
+    letter-spacing: 1.6;
+    margin: 80px 140px;
+    width: 400px;
+    font-weight: 600;
+}
+
+.Brief>video {
+    width: 400px;
+    margin: 100px 150px;
+    border: none;
+    border-radius: 50% 70%;
+}
 /* Sections */
 
 /* ------Drugs------*/
 
 div>h2 {
     text-align: center;
-}
-
-#Drugs {
-    margin-top: 120px;
 }
 
 .Drugs {
@@ -136,7 +154,7 @@ div>div {
     padding: 5px 65px;
 }
 
-/* F5F7F8  #F9F9F9*/
+
 div>figure {
     height: 450px;
     width: 310px;
@@ -155,6 +173,7 @@ figure>img {
 }
 
 figure>div {
+    font-weight: bold;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -171,7 +190,8 @@ button {
     background-color: #3081D0;
     border: none;
     border-radius: 25px;
-    transition-delay: 0.3s;
+    transition-duration: 0.5;
+    transition-delay: 0.3;
 }
 
 button:hover {
