@@ -108,11 +108,3 @@ p>a {
 #or::before {
     left: 32px;
 }
-footer {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
