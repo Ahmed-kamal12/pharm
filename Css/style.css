@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-shadow: #607d8b;
+    --color-button: #3081D0;
+    --backgroundcolor-product: #F9F9F9;
+}
+
 body {
     margin: 0;
 }
@@ -55,14 +61,17 @@ header input {
 }
 
 header a {
-    margin-right: 10px;
-    font-size: 18px;
-    transition-duration: 0.5;
-    transition-delay: 0.3;
+    margin-right: 20px;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
 }
 
- a:hover {
-    text-shadow: 0 0 5px #B2C8BA;
+header>div>a>i {
+    font-size: 25px;
+}
+
+a:hover {
+    text-shadow: 0 0 6px var(--color-shadow);
 }
 
 /*nav bar*/
@@ -74,15 +83,18 @@ nav {
     top: 75px;
     border-bottom: #eee solid 1px;
 }
+
 ul li {
     display: inline-block;
     width: calc(95% / 8);
     margin: 0 auto;
     padding: 5px 25px;
 }
+
 li:hover {
-    text-shadow: 0 0 5px #B2C8BA;
+    text-shadow: 0 0 5px var(--color-shadow);
 }
+
 nav ul {
     margin: 5px;
     list-style: none;
@@ -114,7 +126,7 @@ main p {
     margin-top: 10px;
 }
 
- /*---------- Brief ------------*/
+/*---------- Brief ------------*/
 .Brief {
     display: flex;
     margin-top: 100px;
@@ -137,6 +149,7 @@ main p {
     border: none;
     border-radius: 50% 70%;
 }
+
 /* Sections */
 
 /* ------Drugs------*/
@@ -158,7 +171,7 @@ div>div {
 div>figure {
     height: 450px;
     width: 310px;
-    background-color:#F9F9F9;
+    background-color: var(--backgroundcolor-product);
     margin: 10px 48px;
     border: none;
     border-radius: 30px;
@@ -187,35 +200,41 @@ button {
     width: 80%;
     padding: 10px 0;
     margin: 0 30px;
-    background-color: #3081D0;
+    background-color: var(--color-button);
     border: none;
     border-radius: 25px;
     transition-duration: 0.5;
-    transition-delay: 0.3;
+    transition-delay: 0.4;
 }
 
 button:hover {
-    box-shadow: 0 0 3px 1px #565564;
+    box-shadow: 0 0 5px 3px var(--color-shadow);
 }
 
 /* ------- Footer ------- */
 
 footer {
-    display: flex;
-    margin-top: 50px;
-    height: 300px;
+    margin-top: 40px;
     width: 100%;
+    padding: 25px;
     background-color: #E7E8ED;
 }
 
-footer>div {
-    width: 400px;
-    margin: 0 40px;
+.quick {
+    margin: 0 43% 0 50px;
 }
-h4 {
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
+
+
 footer>div>a {
-    display: block;
+    font-weight: 500;
+    margin: 15px;
+}
+
+footer div i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+div>i {
+    size: 40px;
 }
