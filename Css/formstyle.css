@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --color-ch: #3081D0;
+    --color-ch: #2D9596;
     --color-let: #607d8b;
 }
 
@@ -26,6 +26,7 @@ form>h2 {
 
 /*input style*/
 div>input {
+    outline: none;
     padding: 10px;
     border: none;
     border-bottom: solid #eee;
@@ -60,6 +61,7 @@ span:hover {
     color: white;
     background-color: var(--color-ch);
     cursor: pointer;
+    text-align: center;
     transition-duration: 0.5;
     transition-delay: 0.3;
 }

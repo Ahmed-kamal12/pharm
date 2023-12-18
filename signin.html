@@ -1,3 +1,4 @@
+<!-- <?php include('database.php');?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,33 +7,34 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <form action="main.html">
+    <form method="post" action="main.html">
         <h2>Sign Up</h2>
         <div>
-            <input type="text" placeholder="Name" required autofocus>
+            <input type="text" placeholder="Name" id='name'autofocus>
        </div>
         <div>
-            <input type="email" placeholder="Email" required>
+            <input type="email" placeholder="Email" id="mail">
         </div>
         <div>
-            <input type="tel" placeholder="Phone" required>
+            <input type="tel" placeholder="Phone" id="tele">
         </div>
         <div>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" id="pass">
         </div>
         <div>
             <span>
-                <input type="radio" name="type" >
+                <input type="radio" name="type" required value="Male">
                 <Label>Male</Label>
             </span>
             <span>
-                <input type="radio" name="type" >
+                <input type="radio" name="type" required value="Female">
                 <Label>Female</Label>
             </span>
         </div>
-            <input id="submit" type="submit" value="Create Account">
+            <input id="submit" value="Create Account" onclick="validate()">
             <p>Already have an account? <a href="login.html">Log In</a></p>
             
     </form>
+    <script src="Script/singup.js"></script>
 </body>
 </html>

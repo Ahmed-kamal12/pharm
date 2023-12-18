@@ -7,7 +7,8 @@
 
 :root {
     --color-shadow: #607d8b;
-    --color-button: #3081D0;
+    /*#3081D0 #2D9596 */
+    --color-button: #2D9596;
     --backgroundcolor-product: #F9F9F9;
 }
 
@@ -208,6 +209,7 @@ button {
 }
 
 button:hover {
+    /* background-color: #2D9596; */
     box-shadow: 0 0 5px 3px var(--color-shadow);
 }
 
