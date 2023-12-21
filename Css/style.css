@@ -7,7 +7,6 @@
 
 :root {
     --color-shadow: #607d8b;
-    /*#3081D0 #2D9596 */
     --color-button: #2D9596;
     --backgroundcolor-product: #F9F9F9;
 }
@@ -32,33 +31,26 @@ nav {
 
 /* header Style */
 header {
-    height: 75px;
+    position: fixed;
     z-index: 99999;
+    height: 75px;
+    width: 100%;
+    border-bottom:solid 1px #eee ;
 }
 
 header h2 {
+    position: absolute;
+    display: inline-block;
+    left: 5%;
     text-transform: capitalize;
     letter-spacing: 2.3px;
 }
 
-header {
-    text-transform: capitalize;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
-    border-bottom: #607d8b solid 1px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
-header input {
-    border: none;
-    border-radius: 15px;
-    background-color: #eee;
-    padding: 5px 15px;
-    width: 350px;
+header>div {
+    position: absolute;
+    right: 3%;
+    margin: 25px 0;
 }
 
 header a {
@@ -80,14 +72,16 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 9999;
-    margin-top: 0;
+    margin: 0;
     top: 75px;
     border-bottom: #eee solid 1px;
 }
-
+ul{
+    display: flex;
+    margin: 0;
+}
 ul li {
-    display: inline-block;
-    width: calc(95% / 8);
+    white-space: nowrap;
     margin: 0 auto;
     padding: 5px 25px;
 }
@@ -108,6 +102,7 @@ nav ul {
 main {
     position: relative;
     top: 100px;
+    width: 100%;
     height: 100vh;
     background-image: url(../Images/inage2.png);
     background-size: auto;
@@ -115,7 +110,7 @@ main {
 }
 
 main>div {
-    margin: 60px;
+    margin: 70px;
     height: 100vh;
 }
 
@@ -123,10 +118,16 @@ main h1 {
     display: inline-block;
     margin-bottom: 5px;
 }
-
-main p {
-    margin-top: 5px;
-    font-size: 18px;
+#wr {
+    color: #2D9596;
+}
+main input {
+    outline: none;
+    padding: 10px 10px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 1px #888888 ;
 }
 
 /*---------- Brief ------------*/
@@ -143,7 +144,6 @@ main p {
     letter-spacing: 1.6;
     margin: 80px 140px;
     width: 400px;
-    font-weight: 600;
 }
 
 .Brief>video {
@@ -167,7 +167,7 @@ div>h2 {
 
 div>div {
     display: flex;
-    padding: 5px 65px;
+    padding: 5px 58px;
 }
 
 
@@ -200,7 +200,7 @@ figure>div {
 button {
     color: white;
     font-weight: bold;
-    width: 80%;
+    width: 50%;
     padding: 10px 0;
     margin: 0 30px;
     background-color: var(--color-button);
@@ -212,7 +212,7 @@ button {
 
 button:hover {
     /* background-color: #2D9596; */
-    box-shadow: 0 0 5px 3px var(--color-shadow);
+    box-shadow: 0px 0px 5px 1px #888888 ;
 }
 
 /* ------- Footer ------- */
